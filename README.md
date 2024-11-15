@@ -59,36 +59,36 @@ The goal of this project is to provide an easy-to-implement, offline, voice-cont
 ## Setup Instructions
 
 ### Step 1: Setting Up Vosk for Offline Speech Recognition
-1. Install Vosk and PyAudio:
+- 1. Install Vosk and PyAudio:
    ```bash
    pip install vosk pyaudio
-2. Download the Vosk English model from Vosk Models.
-3. Extract the model and update the model_path in the Python script.
+- 2. Download the Vosk English model from Vosk Models.
+- 3. Extract the model and update the model_path in the Python script.
 ### Step 2: Setting Up MQTT on Your Laptop
-1. Install the paho-mqtt library:
+- 1. Install the paho-mqtt library:
    ```bash
    pip install paho-mqtt
-2.Run the voice_control.py script to start listening for commands.
+- 2.Run the Keyword_Spotting_speech_to_mqtt.ipynb script to start listening for commands.
 ### Step 3: Flashing ESP32 with Arduino Code
-1.Open the provided esp32_mqtt_control.ino file in Arduino IDE.
-2.Update the Wi-Fi SSID, password, and MQTT broker IP in the code.
-3.Upload the code to your ESP32.
+- 1.Open the provided esp32_mqtt_control.ino file in Arduino IDE.
+- 2.Update the Wi-Fi SSID, password, and MQTT broker IP in the code.
+- 3.Upload the code to your ESP32.
 ### Step 4: Wiring ESP32 to Control Devices
-1.Lights: Connect relay modules to control AC appliances.
-2.Stepper Motor: Use a driver module to control stepper motors.
-3.Ensure all components are properly powered and grounded.
+- 1.Lights: Connect relay modules to control AC appliances.
+- 2.Stepper Motor: Use a driver module to control stepper motors.
+- 3.Ensure all components are properly powered and grounded.
 ## Example Commands:
-"Turn on kitchen light"
-"Turn off bedroom light"
-"Turn on fan"
-"Turn off fan"
-"Terminate" (to stop listening)
+- "Turn on kitchen light"
+- "Turn off bedroom light"
+-"Turn on fan"
+- "Turn off fan"
+= "Terminate" (to stop listening)
 ## Project Files:
-Keyword_Spotting_speech_to_mqtt: Python script for voice recognition and MQTT communication
-ESP32_mqtt_ArduinoIDE.ino: ESP32 Arduino sketch for device control
+- Keyword_Spotting_speech_to_mqtt.ipynb: Python script for voice recognition and MQTT communication
+- ESP32_mqtt_ArduinoIDE.ino: ESP32 Arduino sketch for device control
 
 ## Future Enhancements:
-1.Adding support for more appliances.
-2.Integrating a mobile app for manual control.
-3.Implementing custom wake word detection.
-4.Extending support for additional voice commands.
+- 1.Adding support for more appliances.
+- 2.Integrating a mobile app for manual control.
+- 3.Implementing custom wake word detection.
+- 4.Extending support for additional voice commands.
